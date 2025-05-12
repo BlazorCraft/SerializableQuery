@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorCraft.SerializableQuery", "BlazorCraft.SerializableQuery\BlazorCraft.SerializableQuery.csproj", "{740B4615-EE01-49BE-8133-971AE56F1791}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorCraft.SerializableQuery.UnitTests", "BlazorCraft.SerializableQuery.UnitTests\BlazorCraft.SerializableQuery.UnitTests.csproj", "{077D5136-9ED0-4735-B727-D0CC412296E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorCraft.SerializableQuery.Result.Json", "BlazorCraft.SerializableQuery.Result.Json\BlazorCraft.SerializableQuery.Result.Json.csproj", "{97D5C8D5-2173-428E-B7B5-6C2B44EFA43D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorCraft.SerializableQuery.Result.Yaml", "BlazorCraft.SerializableQuery.Result.Yaml\BlazorCraft.SerializableQuery.Result.Yaml.csproj", "{4876268C-E860-4675-BB12-41C0B707E1DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{740B4615-EE01-49BE-8133-971AE56F1791}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{740B4615-EE01-49BE-8133-971AE56F1791}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{740B4615-EE01-49BE-8133-971AE56F1791}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{740B4615-EE01-49BE-8133-971AE56F1791}.Release|Any CPU.Build.0 = Release|Any CPU
+		{077D5136-9ED0-4735-B727-D0CC412296E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{077D5136-9ED0-4735-B727-D0CC412296E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{077D5136-9ED0-4735-B727-D0CC412296E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{077D5136-9ED0-4735-B727-D0CC412296E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97D5C8D5-2173-428E-B7B5-6C2B44EFA43D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97D5C8D5-2173-428E-B7B5-6C2B44EFA43D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97D5C8D5-2173-428E-B7B5-6C2B44EFA43D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97D5C8D5-2173-428E-B7B5-6C2B44EFA43D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4876268C-E860-4675-BB12-41C0B707E1DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4876268C-E860-4675-BB12-41C0B707E1DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4876268C-E860-4675-BB12-41C0B707E1DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4876268C-E860-4675-BB12-41C0B707E1DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
