@@ -1,0 +1,36 @@
+name: NuGet Package Veröffentlichung
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Build
+        run: dotnet build --configuration Release --no-restore
+
+      - name: Pack BlazorCraft.SerilizeableQuery
+        run: dotnet pack BlazorCraft.SerilizeableQuery/BlazorCraft.SerilizeableQuery.csproj -c Release -o packages
+
+      - name: Pack BlazorCraft.SerilizeableQuery.Result.Json
+        run: dotnet pack BlazorCraft.SerilizeableQuery.Result.Json/BlazorCraft.SerilizeableQuery.Result.Json.csproj -c Release -o packages
+
+      - name: Pack BlazorCraft.SerilizeableQuery.Result.Yaml
+        run: dotnet pack BlazorCraft.SerilizeableQuery.Result.Yaml/BlazorCraft.SerilizeableQuery.Result.Yaml.csproj -c Release -o packages
+
+      - name: Push zu NuGet.org
+        run: dotnet nuget push "packages/*.nupkg" --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate
